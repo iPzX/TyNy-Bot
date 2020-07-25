@@ -21,7 +21,7 @@ from aiogram.dispatcher.middlewares import BaseMiddleware
 from aiogram.utils.exceptions import Throttled
 import asyncio
 
-API_TOKEN = '1102816911:AAGjHteN2BGI2MOWh0gySKeH8BbuJQx1BDc'
+API_TOKEN = '<enter your token here>'
 logging.basicConfig(level=logging.INFO)
 storage = RedisStorage2(db=5)
 bot = Bot(token=API_TOKEN, parse_mode=types.ParseMode.HTML)
