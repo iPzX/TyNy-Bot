@@ -53,7 +53,7 @@ async def on_user_join(message: types.Message):
             await message.reply("<b>Hey You cannot add bots here</b>")
         else:
 
-            await message.reply(f'<b>salam {i.mention} jende khoshomadi</b>')
+            await message.reply(f'<b>Hi {i.mention} Welcome :D</b>')
 
     await message.delete()
 
@@ -62,7 +62,7 @@ async def on_user_join(message: types.Message):
 async def kick_(message: types.Message):
     user = await bot.get_chat_member(message.chat.id, message.reply_to_message.from_user.id)
     if not message.reply_to_message:
-        return await message.reply("<b> Please Specify some one to kick bitch</b>")
+        return await message.reply("<b> Please Specify some one to kick</b>")
 
     if user.is_chat_admin():
         await message.reply("<b>Are You serious ?</b>")
@@ -87,7 +87,7 @@ async def pin_smth(message: types.Message):
 async def Mute(message: types.Message):
     user = await bot.get_chat_member(chat_id=message.chat.id, user_id=message.reply_to_message.from_user.id)
     if not message.reply_to_message:
-        return await message.reply("<b> Please Specify some one to kick bitch</b>")
+        return await message.reply("<b> Please Specify some one to kick</b>")
 
     if user.is_chat_admin():
         await message.reply("<b>Are You serious ?</b>")
@@ -122,7 +122,7 @@ async def Unmute(message: types.Message):
                                                                      can_invite_users=True),
                                    )
     if not message.reply_to_message:
-        return await message.reply("<b> Please Specify some one to kick bitch</b>")
+        return await message.reply("<b> Please Specify some one to kick</b>")
 
     if user.is_chat_admin():
         await message.reply("<b>Are You serious ?</b>")
@@ -144,7 +144,7 @@ async def left_chat(message: types.Message):
 @dp.message_handler(text_contains=["promote"], is_chat_admin=True)
 async def promote_admin(message: types.Message):
     if not message.reply_to_message:
-        return await message.reply("<b> Please Specify some one to kick bitch</b>")
+        return await message.reply("<b> Please Specify some one to kick</b>")
 
     await bot.promote_chat_member(chat_id=message.chat.id, user_id=message.reply_to_message.from_user.id,
                                   can_change_info=False,
@@ -234,7 +234,7 @@ async def get_admins(message: types.Message):
 async def unban(message: types.Message):
     user = await bot.get_chat_member(message.chat.id, message.reply_to_message.from_user.id)
     if not message.reply_to_message:
-        return await message.reply("<b> Please Specify some one to kick bitch</b>")
+        return await message.reply("<b> Please Specify some one to kick</b>")
 
     if user.is_chat_admin():
         await message.reply("<b>Are You serious ?</b>")
