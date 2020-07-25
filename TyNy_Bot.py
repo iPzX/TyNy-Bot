@@ -1,25 +1,11 @@
 import logging
-from aiogram.dispatcher.filters import BoundFilter
-from aiogram import Bot, Dispatcher, executor, types
-import logging
-import random
 import requests
 from bs4 import BeautifulSoup
-from aiogram import Bot, Dispatcher, executor, types
-from aiogram.dispatcher.filters import BoundFilter, Text
-from aiogram import Bot, Dispatcher, executor, md, types
-from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from aiogram.contrib.middlewares.logging import LoggingMiddleware
-from aiogram.utils.callback_data import CallbackData
-from aiogram.utils.exceptions import MessageNotModified, Throttled
 from time import time
 from aiogram import Bot, Dispatcher, executor, types
 from aiogram.contrib.fsm_storage.redis import RedisStorage2
-from aiogram.dispatcher import DEFAULT_RATE_LIMIT
-from aiogram.dispatcher.handler import CancelHandler, current_handler
-from aiogram.dispatcher.middlewares import BaseMiddleware
-from aiogram.utils.exceptions import Throttled
-import asyncio
+
 
 API_TOKEN = '<enter your token here>'
 logging.basicConfig(level=logging.INFO)
