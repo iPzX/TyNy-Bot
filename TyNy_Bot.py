@@ -383,7 +383,7 @@ async def get_gp_info(message: types.Message):
     for i in a:
         admin_user_name_list.append(f'@{i.user.username}')
     admins = str(admin_user_name_list)
-    # i know this is kinda weird :| but when i tried to edit a message i get some bullshit error from telegram sorry :(
+    # i know this is kinda weird :| but when i tried to edit a message i got some bullshit error from telegram sorry :(
     admins = admins.replace('[', '')
     admins = admins.replace(']', '')
     admins = admins.replace("'", "")
