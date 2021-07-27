@@ -1,7 +1,7 @@
 a fun telegram python bot using aiogram library
 
 use this commands to install the bot librarys : pip3 install -U aiogram ,ujson , aioredis ,requests, bs4 
-you should have at least python3.7 installed on your system
+
 
 replace your token on line 24
 use python3 bot.py
