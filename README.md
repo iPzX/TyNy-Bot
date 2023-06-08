@@ -1,4 +1,4 @@
-Hope you actually learn smth from this because even i dont know what's going on here\n\n
+Hope you actually learn smth from this because even i dont know what's going on here
 
 
 
